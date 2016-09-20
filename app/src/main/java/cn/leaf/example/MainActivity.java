@@ -124,7 +124,7 @@ public class MainActivity extends Activity {
         String str =  file.getName().substring(0, file.getName().indexOf("."));
 
         IMGCompression.get(this).loadFile(file)
-                .setSavePath(MainActivity.dir + "/" + str + ".jpg")//单张路径（不填也有默认路径）
+//                .setSavePath(MainActivity.dir + "/" + str + "_1.jpg")//单张路径（不填也有默认路径）
                 .setListener(new OnCompressionListener() {
                     @Override
                     public void onStart() {

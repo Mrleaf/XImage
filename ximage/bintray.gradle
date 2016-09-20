@@ -5,7 +5,7 @@ version = "1.0.0"
 
 def siteUrl = 'https://github.com/Mrleaf/XImage'      // 项目的主页
 def gitUrl = 'https://github.com/Mrleaf/XImage.git'   // Git仓库的url
-group = "cn.leaf.compression"                                        // Maven Group ID for the artifact，一般填你唯一的包名
+group = "cn.leaf.ximage"                                        // Maven Group ID for the artifact，一般填你唯一的包名
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters

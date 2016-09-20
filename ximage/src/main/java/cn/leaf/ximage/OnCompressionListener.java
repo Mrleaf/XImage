@@ -13,9 +13,9 @@ public interface OnCompressionListener {
     void onStart();
     /**
      * 压缩成功
-     * @param file
+     * @param files
      */
-    void onSuccess(List<File> file);
+    void onSuccess(List<File> files);
 
     /**
      * 压缩失败

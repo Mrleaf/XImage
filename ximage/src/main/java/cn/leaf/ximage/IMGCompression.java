@@ -235,7 +235,7 @@ public class IMGCompression {
 
         if(scale<=1 && scale >= 0.5625){
             //1:1---9:16  包含大部分常见比例图片
-            Log.e("----属性1", "比例：" + scale + "-最长边：" + maxLength + "-文件大小：" + file.length() / 1024);
+            Log.i(TAG + "-1", "scale：" + scale + "size：" + file.length() / 1024);
             if (file.length() / 1024 < 100) return file;
             if(maxLength <= 1280){
                 size = (width * height) / Math.pow(1280, 2) * 150;
@@ -249,7 +249,7 @@ public class IMGCompression {
             }
         }else if(scale<0.5625 && scale > 0.4285){
             //9:16---- 3:7
-            Log.e("----属性2", "比例：" + scale + "-最长边：" + maxLength + "-文件大小：" + file.length() / 1024);
+            Log.i(TAG + "-2", "scale：" + scale + "size：" + file.length() / 1024);
             if (file.length() / 1024 < 150) return file;
             if(maxLength <= 1280){
                 size = (thumbW * thumbH) / (1440.0 * 2560.0) * 300;
@@ -263,7 +263,7 @@ public class IMGCompression {
             }
         }else{
             //长图
-            Log.e("----属性3", "比例：" + scale + "-最长边：" + maxLength + "-文件大小：" + file.length() / 1024);
+            Log.i(TAG+"-3", "scale：" + scale + "size：" + file.length() / 1024);
             if(file.length()/1024<300)return file;
             if(width<=1280||height<=1280){
                 size = ((thumbW * thumbH) / (maxLength * (1280 / scale))) * 500;

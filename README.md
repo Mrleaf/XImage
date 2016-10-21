@@ -17,7 +17,7 @@ IMGCompression.get(this).loadFile(file)    // File
 
                     @Override
                     public void onSuccess(List<File> fileList) {
-                       
+                       //处理后的图片
                     }
 
                     @Override
@@ -37,7 +37,7 @@ IMGCompression.get(this).loadFile(list) //List<File> fileList
 
                     @Override
                     public void onSuccess(List<File> fileList) {
-                        
+                        //处理后的图片
                     }
 
                     @Override

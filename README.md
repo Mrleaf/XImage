@@ -1,7 +1,7 @@
 # XImage
 android 图片压缩工具，提供单张和多张图片压缩
 
-压缩算法借鉴了Luban（https://github.com/Curzibn/Luban）
+压缩算法借鉴了[Luban](https://github.com/Curzibn/Luban "Luban") 
 
 在算法上进行了优化，对大部分常见比例图片和长图，分别测试了QQ和微信图片进行逆向推算。（算法更偏向于QQ）
 
